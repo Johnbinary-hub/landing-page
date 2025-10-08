@@ -19,6 +19,7 @@ body {
   background: linear-gradient(rgba(0, 0, 150, 0.6), rgba(0, 0, 100, 0.8)),
     url("https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=1350&q=80") no-repeat center/cover;
   width: 100%;
+  border-radius: 15px;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -130,7 +131,8 @@ button:hover {
   transition: transform 0.3s ease;
 }
 .card img {
-  width: 100%;
+  width: 80px;
+  height: 80px;
   border-radius: 12px;
   margin-bottom: 15px;
 }
@@ -144,6 +146,8 @@ button:hover {
   padding: 80px 20px;
   background: linear-gradient(135deg, #3b82f6, #22c55e);
   color: #fff;
+  margin-top: 15px;
+  border-radius: 20px;
 }
 .cta h2 {
   font-size: 2rem;
@@ -186,3 +190,94 @@ footer {
     font-size: 1rem;
   }
 }
+.student-link{
+  color: #22c55e;
+  text-decoration: none;
+  font-weight: 600;
+}
+.student-link:hover {
+  text-decoration: underline;
+  color: white;
+}
+.services{
+ padding: 80px 20px;
+  text-align: center;
+  border-radius: 20px;
+  border: 0.2rem solid #22c55e; 
+}
+.pricing-section {
+      text-align: center;
+      padding: 60px 20px;
+      color: blue;
+    }
+
+    .pricing-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .pricing-section p {
+      font-size: 1.1rem;
+      margin-bottom: 50px;
+      color: blue;
+    }
+
+    .plans {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .plan {
+      background: #fff;
+      color: #111;
+      border-radius: 16px;
+      padding: 30px 20px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .plan:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .plan h3 {
+      font-size: 1.8rem;
+      color: #2563eb;
+    }
+
+    .plan p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    .plan ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .plan ul li {
+      margin: 10px 0;
+      color: #555;
+    }
+
+    .button4 {
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .button4:hover {
+      background: #1d4ed8;
+    }
